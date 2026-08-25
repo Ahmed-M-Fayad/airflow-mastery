@@ -1,0 +1,43 @@
+# --- Secrets / environment ---
+.env
+*.env
+!.env.example
+
+# --- Airflow runtime ---
+logs/
+plugins/__pycache__/
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+standalone_admin_password.txt
+unittests.cfg
+
+# --- Local data (mounted volumes, not source) ---
+data/
+!data/.gitkeep
+
+# --- dbt (Project 11 capstone) ---
+dags/11_capstone_analytics_mart/dbt/target/
+dags/11_capstone_analytics_mart/dbt/dbt_packages/
+dags/11_capstone_analytics_mart/dbt/logs/
+*.duckdb
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+venv/
+
+# --- Docker ---
+docker-compose.override.yml
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
