@@ -13,7 +13,7 @@ standalone_admin_password.txt
 unittests.cfg
 
 # --- Local data (mounted volumes, not source) ---
-data/
+data/*
 !data/.gitkeep
 
 # --- dbt (Project 11 capstone) ---
