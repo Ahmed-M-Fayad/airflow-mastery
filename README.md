@@ -8,13 +8,9 @@ Hands-on Apache Airflow code from working through *Data Pipelines with Apache Ai
 
 | Path | What it is |
 |------|------------|
-| `dags/ch02_anatomy_of_a_dag/` | Rocket launches DAG: downloads upcoming launches and their images |
-| `dags/ch03_scheduling/` | User stats DAG: fetches events from a local API and computes per-user daily counts |
+| `dags/` | DAGs written for practicing every chapter |
 | `events_api/` | Small mock HTTP API used by chapter 3 (runs as the `events-api` service) |
 | `plugins/` | Custom hooks and operators (empty so far) |
-| `data/` | Task outputs, bind-mounted to `/opt/airflow/data` (git-ignored) |
-
-Each chapter folder has its own README with what the DAG does and what broke along the way.
 
 ## Run it
 
