@@ -4,12 +4,12 @@ import json
 from airflow.sdk import dag, task
 
 @dag(
-    dag_id="inspecting_template_args",
+    dag_id="inspecting_context_args",
     start_date=dt.datetime(2026, 10, 30),
     schedule="@hourly",
 )
 
-def inspecting_template_args():
+def inspecting_context_args():
 
     @task
     def print_context(**kwargs):
@@ -17,4 +17,4 @@ def inspecting_template_args():
 
     print_context()
 
-inspecting_template_args()
+inspecting_context_args()
